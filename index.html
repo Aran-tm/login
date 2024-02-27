@@ -10,17 +10,36 @@
   </head>
   <body>
     <!-- adding a new section-->
-    <section class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <section class="bg-gray-50 min-h-screen flex items-center justify-center">
       <!-- Login Container -->
-      <div class="bg-cyan-100 flex">
+      <div class="bg-gray-50 flex rounded-2xl shadow-lg max-w-3xl p-5">
         <!-- Form Container -->
-        <div class="w-1/2">
-          <h2>test</h2>
+        <div class="sm:w-1/2 px-16">
+          <h2 class="font-bold text-2xl">Login</h2>
+          <p class="text-sm mt-4">If you are already a member, please log in</p>
+
+          <!-- This is the form tag-->
+          <form action="" class="flex flex-col gap-4">
+            <input
+              class="p-2 mt-8 rounded-xl"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              class="p-2 mt-8 rounded-xl"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+
+            <button>login</button>
+          </form>
         </div>
 
         <!-- Image Container -->
-        <div class="w-1/2">
-          <img src="logo.webp" alt="" />
+        <div class="w-1/2 p-5 rounded-lg sm:block hidden">
+          <img src="logo.jpeg" alt="" class="rounded-2xl" />
         </div>
       </div>
     </section>
